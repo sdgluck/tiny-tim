@@ -1,0 +1,39 @@
+{
+  "name": "tiny-tim",
+  "version": "0.0.1",
+  "description": "Meet Tim, a small, simple timer",
+  "main": "lib/index.js",
+  "esnext:main": "src/index.js",
+  "scripts": {
+    "build": "rimraf lib && babili src -d lib",
+    "lint": "snazzy",
+    "test": "npm run build && node test.js",
+    "prepublishOnly": "npm run lint && npm run build"
+  },
+  "author": "Sam Gluck <sdgluck@gmail.com>",
+  "license": "MIT",
+  "repository": "sdgluck/tiny-tim",
+  "keywords": [
+    "timer",
+    "tiny",
+    "profile",
+    "stopwatch",
+    "stop",
+    "watch",
+    "tim"
+  ],
+  "devDependencies": {
+    "babel-eslint": "^7.1.1",
+    "babili": "0.0.10",
+    "rimraf": "^2.5.4",
+    "snazzy": "^6.0.0",
+    "standard": "^7.1.1",
+    "tape": "^4.6.3"
+  },
+  "standard": {
+    "parser": "babel-eslint",
+    "ignore": [
+      "/lib"
+    ]
+  }
+}
