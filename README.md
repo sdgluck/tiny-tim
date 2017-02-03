@@ -45,7 +45,7 @@ var timer = require('tiny-tim')
 
 ## Usage
 
-### `timer([unit[, suffix]]) : Function<String|Number>`
+### `timer([unit[, suffix]]) : Function`
 
 Create a timer and start counting!
 
