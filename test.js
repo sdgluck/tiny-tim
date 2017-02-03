@@ -29,12 +29,20 @@ test('no suffix returns number', (t) => {
 
 test('counts ok', (t) => {
   const start = Date.now()
-  const tim = timer('m', true)
-  setTimeout(() => {
-    const actual = tim()
-    const end = Date.now()
-    const expected = end - start
-    t.equals(actual >= expected, true)
-    t.end()
-  }, 30000)
+
+  const ms = timer('ms')
+  const s = timer('s')
+  const m = timer('m')
+  const h = timer('s')
+
+  const end = start + (1000 * 60 * 60)
+  const expected = end - start
+
+  Date.now = () => end
+
+  t.equals(ms() >= expected, true)
+  t.equals(s() >= expected / 1000, true)
+  t.equals(m() >= expected / (1000 * 60), true)
+  t.equals(h() >= expected / (1000 * 60 * 60), true)
+  t.end()
 })
