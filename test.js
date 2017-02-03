@@ -38,7 +38,9 @@ test('counts ok', (t) => {
   const end = start + (1000 * 60 * 60)
   const expected = end - start
 
-  Date.now = () => end
+  Date = function () {
+    this.valueOf = () => end
+  }
 
   t.equals(ms() >= expected, true)
   t.equals(s() >= expected / 1000, true)

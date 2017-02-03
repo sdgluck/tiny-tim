@@ -1,6 +1,6 @@
 {
   "name": "tiny-tim",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Meet Tim, a small, simple timer",
   "main": "lib/index.js",
   "esnext:main": "src/index.js",

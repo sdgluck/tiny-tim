@@ -15,7 +15,7 @@
 
 <hr/>
 
-Comes in at `167 bytes` minified. Zero dependencies.
+Comes in at `165 bytes` minified. Zero dependencies.
 
 Tiny Tim is compiled using [`babili`](https://github.com/babel/babili) for ES6+ and CommonJS environments.
 
