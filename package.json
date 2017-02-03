@@ -1,14 +1,13 @@
 {
   "name": "tiny-tim",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Meet Tim, a small, simple timer",
   "main": "lib/index.js",
   "esnext:main": "src/index.js",
   "scripts": {
     "build": "rimraf lib && babili src -d lib",
-    "lint": "snazzy",
     "test": "npm run build && node test.js",
-    "prepublishOnly": "npm run lint && npm run build"
+    "prepublishOnly": "npm run build"
   },
   "author": "Sam Gluck <sdgluck@gmail.com>",
   "license": "MIT",
@@ -29,11 +28,5 @@
     "snazzy": "^6.0.0",
     "standard": "^7.1.1",
     "tape": "^4.6.3"
-  },
-  "standard": {
-    "parser": "babel-eslint",
-    "ignore": [
-      "/lib"
-    ]
   }
 }

@@ -10,12 +10,11 @@
   
 <p align="center">
     <a href="http://badge.fury.io/js/tiny-tim"><img alt="npm version" src="https://badge.fury.io/js/tiny-tim.svg" /></a>
-    <a href="http://standardjs.com/"><img src="https://img.shields.io/badge/code%20style-standard-brightgreen.svg" /></a>
 </p>
 
 <hr/>
 
-Comes in at `167 bytes` minified. Zero dependencies.
+Comes in at `165 bytes` minified. Zero dependencies.
 
 Tiny Tim is compiled using [`babili`](https://github.com/babel/babili) for ES6+ and CommonJS environments.
 
