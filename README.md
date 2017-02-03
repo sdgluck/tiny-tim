@@ -50,12 +50,12 @@ var timer = require('tiny-tim')
 Create a timer and start counting!
 
 - __unit__ {String} Unit of time to return _(optional, default=`"s"`)_
-- __suffix__ {Boolean} Attach suffix, e.g. s appends `"s"` _(optional, default=`false`)_
+- __suffix__ {Boolean} Attach suffix, e.g. unit "s" appends `"s"` _(optional, default=`false`)_
 
 Available units: `"ms"`, `"s"`, `"m"`, `"h"`
  
 Returns a function that stops the timer and returns the duration:
- - as a string if with prefix 
+ - as a string if with suffix 
  - or as a number without
  
 ## Examples
@@ -80,7 +80,7 @@ setTimeout(() => {
 const milliseconds = timer()
 
 setTimeout(() => {
-  console.log(milliseconds()) //=> '1000'
+  console.log(milliseconds()) //=> 1000
 }, 1000)
 ```
 
