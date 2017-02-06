@@ -1,6 +1,6 @@
-module.exports = (unit = 's', suffix) => {
+module.exports = (unit, suffix) => {
   var divs = { ms: 1, s: 1e3, m: 6e4, h: 36e5 }
-  var div = divs[unit] || divs.ms
+  var div = divs[unit || 's']
   var append = suffix && div ? unit : 0
   var start = +new Date
 

@@ -14,7 +14,7 @@
 
 <hr/>
 
-:cookie:  Comes in at `165 bytes` minified. Zero dependencies.
+:cookie:  Comes in at `156 bytes` minified. Zero dependencies.
 
 :sparkles: Tiny Tim is compiled using [`babili`](https://github.com/babel/babili) for ES6+ and CommonJS environments.
 
