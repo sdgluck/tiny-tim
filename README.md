@@ -20,6 +20,8 @@
 
 :point_right: Use your preferred bundler and transpiler as required.
 
+:page_facing_up: Read the [annotated source code](https://github.com/sdgluck/tiny-tim/blob/master/ANNOTATED.md).
+
 ## Install
 
 ```sh
